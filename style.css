@@ -1,3 +1,50 @@
+
+/* =============================================================================
+  #GENERAL
+============================================================================= */
+body {
+    background-color: pink;
+
+    display: flex;
+    justify-content: center;
+
+    height: 100svh;
+}
+
 main {
-    background-color: red;
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+/* =============================================================================
+  #TYPOGRAPHY
+============================================================================= */
+
+
+/* =============================================================================
+  #CONTENT
+============================================================================= */
+
+.left {
+    background-color: blue;
+    width: 300px;
+    height: 400px;
+}
+
+.right {
+    background-color: green;
+    width: 300px;
+    height: 400px;
 }
