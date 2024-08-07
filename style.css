@@ -1,50 +1,91 @@
+@font-face {
+  font-family: "Hanken";
+  src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+
+  font-weight: 500;
+  font-style: normal;
+}
+
 
 /* =============================================================================
   #GENERAL
 ============================================================================= */
 body {
-    background-color: pink;
+  background-color: pink;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    height: 100svh;
+  height: 100svh;
+
+  font-family: "Hankek", Arial, Helvetica, sans-serif;
 }
 
 main {
-    /* background-color: red; */
+  /* background-color: red; */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    
+
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+  /* background-color: yellow; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
 
 }
+
 /* =============================================================================
   #TYPOGRAPHY
 ============================================================================= */
+h2 {
+  
+}
 
+h3 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+}
 
 /* =============================================================================
   #CONTENT
 ============================================================================= */
 
 .left {
-    background-color: blue;
-    width: 300px;
-    height: 400px;
+  /* background-color: blue; */
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
+  color: white;
+  width: 300px;
+  height: 450px;
+
+  border-radius: 30px;
 }
 
 .right {
-    background-color: green;
-    width: 300px;
-    height: 400px;
+  background-color: green;
+  width: 300px;
+  height: 450px;
+}
+
+.circle {
+  /* background-color: brown; */
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
