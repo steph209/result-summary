@@ -11,22 +11,22 @@
   #GENERAL
 ============================================================================= */
 body {
-  background-color: pink;
+  background-color: white;
 
   display: flex;
   justify-content: center;
-
-  height: 100svh;
 
   font-family: "Hankek", Arial, Helvetica, sans-serif;
 }
 
 main {
-  /* background-color: red; */
+  background-color: red;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 100svh;
 
 
 }
@@ -41,21 +41,45 @@ section {
 
 }
 
+li {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+
+  background-color: purple;
+
+}
+
 /* =============================================================================
   #TYPOGRAPHY
 ============================================================================= */
+h2, h3, h4{
+  font-family: "Hanken", Arial, Helvetica, sans-serif;
+}
+
 h2 {
-  
+  font-weight: 700;
 }
 
 h3 {
+  font-weight: 800;
+}
+
+h4 {
   font-weight: 700;
+  /* margin: 12px; */
 }
 
 p {
   font-size: 18px;
+
+  color: hsl(224, 30%, 27%);
 }
 
+span {
+  font-weight: 700;
+}
 /* =============================================================================
   #CONTENT
 ============================================================================= */
@@ -70,22 +94,30 @@ p {
   border-radius: 30px;
 }
 
+.circle {
+  /* background-color: brown; */
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+
+  /* margin: 22px; */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result-description {
+  background-color: red;
+}
+
+
 .right {
   background-color: green;
   width: 300px;
   height: 450px;
 }
 
-.circle {
-  /* background-color: brown; */
-  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
