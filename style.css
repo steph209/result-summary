@@ -41,16 +41,6 @@ section {
 
 }
 
-li {
-  display: flex;
-  flex-direction: row;
-
-  width: 100%;
-
-  background-color: purple;
-
-}
-
 /* =============================================================================
   #TYPOGRAPHY
 ============================================================================= */
@@ -81,6 +71,7 @@ p {
 
 span {
   font-weight: 700;
+  color: hsl(224, 30%, 27%);
 }
 /* =============================================================================
   #CONTENT
@@ -90,7 +81,7 @@ span {
   /* background-color: blue; */
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
   color: white;
-  width: 300px;
+  width: 325px;
   height: 450px;
 
   border-radius: 30px;
@@ -124,7 +115,29 @@ span {
 
 .right {
   background-color: green;
-  width: 300px;
+  width: 325px;
   height: 450px;
+
 }
 
+ul {
+  background-color: purple;
+  padding: 20px;
+
+  width: 80%;
+  display: inline-block;
+}
+
+ul li {
+  display: flex;
+  
+  /* flex-direction: row; */
+
+  /* display: block;
+  contain: content; */
+  width: 100%;
+
+  background-color: rgb(179, 107, 1);
+  margin: 5px;
+
+}
