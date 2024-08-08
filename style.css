@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
 
-  font-family: "Hankek", Arial, Helvetica, sans-serif;
+  font-family: "Hanken", Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -55,11 +55,14 @@ li {
   #TYPOGRAPHY
 ============================================================================= */
 h2, h3, h4{
-  font-family: "Hanken", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  margin: 24px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 h2 {
-  font-weight: 700;
+  color:  hsl(241, 100%, 89%);
 }
 
 h3 {
@@ -67,14 +70,13 @@ h3 {
 }
 
 h4 {
-  font-weight: 700;
-  /* margin: 12px; */
+  /* font-weight: 700; */
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 
-  color: hsl(224, 30%, 27%);
+  color: hsl(241, 100%, 89%);
 }
 
 span {
@@ -94,6 +96,10 @@ span {
   border-radius: 30px;
 }
 
+  .left div {
+    margin: 12px;
+  }
+
 .circle {
   /* background-color: brown; */
   background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
@@ -111,7 +117,8 @@ span {
 }
 
 .result-description {
-  background-color: red;
+  /* background-color: red; */
+  text-align: center;
 }
 
 
