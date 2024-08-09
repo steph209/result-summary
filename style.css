@@ -12,11 +12,14 @@
 ============================================================================= */
 body {
   background-color: white;
+  
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
   font-family: "Hanken", Arial, Helvetica, sans-serif;
+  height: 100svh;
 }
 
 main {
@@ -24,11 +27,11 @@ main {
 
   display: flex;
   justify-content: center;
-  align-items: center;
 
-  height: 100svh;
+  border-radius: 30px;
+  overflow: hidden;
 
-
+  width: 70%;
 }
 
 section {
@@ -37,6 +40,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding: 30px;
   /* justify-content: center; */
 
 }
@@ -46,13 +51,14 @@ section {
 ============================================================================= */
 h2, h3, h4{
   font-style: normal;
-  margin: 24px;
+  /* margin: 24px; */
   font-weight: 700;
   font-size: 18px;
 }
 
 h2 {
   color:  hsl(241, 100%, 89%);
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -61,6 +67,7 @@ h3 {
 
 h4 {
   /* font-weight: 700; */
+  margin-bottom: 20px;
 }
 
 p {
@@ -81,14 +88,17 @@ span {
   /* background-color: blue; */
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
   color: white;
-  width: 325px;
-  height: 450px;
+  width: 50%;
+  /* height: 450px; */
 
-  border-radius: 30px;
+  /* border-radius: 30px; */
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+
 }
 
-  .left div {
-    margin: 12px;
+  .left h2{
+    margin-bottom: 0;
   }
 
 .circle {
@@ -98,8 +108,8 @@ span {
   border-radius: 100%;
   width: 150px;
   height: 150px;
-
-  /* margin: 22px; */
+  margin: 40px 0;
+  gap: 15px; 
   
   display: flex;
   justify-content: center;
@@ -115,29 +125,46 @@ span {
 
 .right {
   background-color: green;
-  width: 325px;
-  height: 450px;
+  width: 50%;
+  /* height: 450px; */
 
 }
 
 ul {
-  background-color: purple;
-  padding: 20px;
+  /* background-color: purple; */
+  /* padding: 20px; */
 
   width: 80%;
-  display: inline-block;
-}
-
-ul li {
-  display: flex;
   
-  /* flex-direction: row; */
-
-  /* display: block;
-  contain: content; */
-  width: 100%;
-
-  background-color: rgb(179, 107, 1);
-  margin: 5px;
-
+  display: flex;
+  flex-direction: column;
+  gap:12px;
 }
+
+  .summary__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 12px 14px;
+    background-color: rgb(179, 107, 1);
+    /* margin: 5px; */
+
+  }
+
+    .summary__item div {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+  .summary__item--red {
+    background-color: rgb(60, 102, 5);
+    
+  }
+
+  .btn {
+    margin-top: auto;
+    border-style: none;
+    box-shadow: none;
+  }
