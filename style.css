@@ -158,11 +158,28 @@ ul {
       display: flex;
       align-items: center;
       gap: 6px;
+
+      color: black;
     }
 
   .summary__item--red {
-    background-color: rgb(60, 102, 5);
-    
+    background-color: hsla(0, 100%, 67%, 0.1);
+  }
+
+  /* .summary__item--red p {
+    color: hsl(0, 100%, 67%);
+  } */
+
+  .summary__item--yellow {
+    background-color: hsla(39, 100%, 56%, 0.1);
+  }
+
+  .summary__item--green {
+    background-color: hsla(166, 100%, 37%, 0.1);
+  }
+
+  .summary__item--blue {
+    background-color: hsla(234, 85%, 45%, 0.1);
   }
 
   .btn {
