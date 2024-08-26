@@ -45,7 +45,7 @@ section {
   flex-direction: column;
   align-items: center;
 
-  padding: 30px;
+  padding: 24px;
   /* justify-content: center; */
 
 }
@@ -62,7 +62,7 @@ h2, h3, h4{
 
 h2 {
   color:  hsl(241, 100%, 89%);
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 h3 {
@@ -138,11 +138,11 @@ button {
 
 
 .sum {
-  /* width: 50%; */
+  padding: 24px;
 }
 
 ul {
-  width: 80%;
+  width: 100%;
   
   display: flex;
   flex-direction: column;
@@ -203,7 +203,7 @@ ul {
     position: fixed;
     bottom: 0;
     left: 0;
-    right:0
+    right:0;
   }
   
  
