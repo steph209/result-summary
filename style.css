@@ -5,48 +5,32 @@
   font-weight: 500;
   font-style: normal;
 }
-
-
 /* =============================================================================
   #GENERAL
 ============================================================================= */
 body {
   background-color: white;
-  
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-
   font-family: "Hanken", Arial, Helvetica, sans-serif;
   height: 100svh;
 }
 
-main {
-  background-color: white;
-  box-shadow: 10px 10px 40px hsl(241, 100%, 89%) ;
+  main {
+    width: 100%;
+    height: 100%;
+    
+    background-color: white;
+    box-shadow: 10px 10px 40px hsl(241, 100%, 89%) ;
+    
+    overflow: hidden;
+  }
 
-  /* display: flex;
-  justify-content: center; */
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-  /* border-radius: 30px; */
-  overflow: hidden;
-
-  /* width: 70%; */
-  width: 100%;
-  /* max-width: 600px; */
-  height: 100%;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 16px;
-  /* justify-content: center; */
-
-}
+      padding: 16px;
+    }
 
 /* =============================================================================
   #TYPOGRAPHY
@@ -68,7 +52,6 @@ h3 {
 }
 
 h4 {
-  /* font-weight: 700; */
   margin-bottom: 20px;
   font-size: 20px;
   letter-spacing: 1px;
@@ -82,32 +65,18 @@ span {
   font-weight: 700;
   color: hsl(224, 30%, 27%);
 }
-
-.sum h2 {
-  color: hsl(224, 30%, 27%);
-  text-align: left;
-}
-
-button {
-  font-family: "Hanken", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
 /* =============================================================================
-  #CONTENT
+  #RESULT SECTION
 ============================================================================= */
-
-
-
 .results {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
   color: white;
-  /* width: 50%; */
 
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
 }
 
-  .results h2{
+  .results h2 {
     margin-bottom: 0;
   }
 
@@ -115,156 +84,181 @@ button {
     color: hsl(241, 100%, 89%);
   }
 
-.circle {
-  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-  
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
-  margin: 40px 0;
-  gap: 15px; 
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.result-description {
-  text-align: center;
-}
-
-
-.sum {
-  /* padding: 16px; */
-  width: 50%;
-}
-
-ul {
-  width: 100%;
-  
-  display: flex;
-  flex-direction: column;
-  gap:12px;
-}
-
-  .summary__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    border-radius: 10px;
-    
-    padding: 12px 14px;
-    background-color: rgb(179, 107, 1);
-    font-weight: bold;
-  }
-
-    .summary__item div {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .summary__item p {
-      color: grey;
-    }
-
-    
-
-  .summary__item--red {
-    background-color: hsla(0, 100%, 67%, 0.1);
-    color: hsl(0, 100%, 67%);
-  }
-
-  
-  .summary__item--yellow {
-    background-color: hsla(39, 100%, 56%, 0.1);
-    color: hsl(39, 100%, 56%);
-  }
-  
-  .summary__item--green {
-    background-color: hsla(166, 100%, 37%, 0.1);
-    color: hsl(166, 100%, 37%);
-  }
-  
-  .summary__item--blue {
-    background-color: hsla(234, 85%, 45%, 0.1);
-    color: hsl(234, 85%, 45%);
-  }
-  
-  .summary__item--red div p, 
-  .summary__item--yellow div p,
-  .summary__item--green div p,
-  .summary__item--blue div p {
-    color:inherit;
-  }
-
-  .btn {
-    /* margin-top: 20px; */
-    border-style: none;
-    box-shadow: none;
-
-    background-color: hsl(224, 30%, 27%);
-    color: white;
-
-    font-size: 16px;
-    padding: 15px;
-    border-radius: 40px;
-    /* margin-bottom: 8px; */
-    /* margin: 0px 16px 8px 16px; */
-
-    position: fixed;
-    bottom: 8px;
-    left: 16px;
-    right: 16px;
-  }
-
-  button:hover {
-    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-  }
-  
-  @media screen and (min-width: 850px) {
-    main {
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-  
-    border-radius: 30px;
-    max-width: 600px;
-    width: 70%;
-    height: auto;
-    }
-  
-    body {
+  .circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-  
-  .results{
-    width: 50%;
-    border-radius: 30px;
-  }
-  
-  .btn {
-    position: relative;
-    bottom: unset;
-    left: unset;
-    right: unset;
-    margin-top: auto;
+    flex-direction: column;
+    gap: 15px; 
+    
+    width: 150px;
+    height: 150px;
+    margin: 40px 0;
+    
+    border-radius: 100%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   }
 
-  .results h2 {
-    margin-bottom: 24px;
+  .result-description {
+    text-align: center;
   }
 
-  .sum {
-    align-items: normal;
+/* =============================================================================
+  #SUMMARY SECTION
+============================================================================= */
+.sum {
+  padding-top: 24px;
+}
+
+  .sum h2 {
+    color: hsl(224, 30%, 27%);
     text-align: left;
   }
 
-  section {
-    padding: 24px 20px;
+  .summary-list {
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    
+    width: 100%;
   }
+
+    .summary__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 12px 14px;
+      
+      font-weight: bold;
+      
+      border-radius: 10px;
+      background-color: rgb(179, 107, 1);
+    }
+
+      .summary__item div {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .summary__item p {
+        color: grey;
+      }
+
+    .summary__item--red {
+      background-color: hsla(0, 100%, 67%, 0.1);
+      color: hsl(0, 100%, 67%);
+    }
+
+    
+    .summary__item--yellow {
+      background-color: hsla(39, 100%, 56%, 0.1);
+      color: hsl(39, 100%, 56%);
+    }
+    
+    .summary__item--green {
+      background-color: hsla(166, 100%, 37%, 0.1);
+      color: hsl(166, 100%, 37%);
+    }
+    
+    .summary__item--blue {
+      background-color: hsla(234, 85%, 45%, 0.1);
+      color: hsl(234, 85%, 45%);
+    }
+  
+      .summary__item--red div p, 
+      .summary__item--yellow div p,
+      .summary__item--green div p,
+      .summary__item--blue div p {
+        color:inherit;
+      }
+/* =============================================================================
+  #BTN
+============================================================================= */
+button {
+  font-family: "Hanken", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.btn {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+
+  color: white;
+  font-size: 16px;
+
+  padding: 15px;
+  
+  border-radius: 40px;
+  border-style: none;
+  box-shadow: none;
+  background-color: hsl(224, 30%, 27%);
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+/* =============================================================================
+  #DESKTOP
+============================================================================= */
+@media screen and (min-width: 850px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    main {
+      display: flex;
+      border-radius: 30px;
+      
+      max-width: 600px;
+      width: 70%;
+      height: auto;
+    }
+
+      h2,
+      .results h2 {
+        margin-bottom: 40px;
+      }
+
+      section {
+        padding: 24px 20px;
+      }
+
+      .results{
+        width: 50%;
+        border-radius: 30px;
+      }
+
+        .result-description {
+          margin-top: 40px;
+        }
+
+        .circle {
+          margin: 0;
+        }
+
+      .sum {
+        width: 50%;
+        align-items: normal;
+        text-align: left;
+      }
+  
+      .btn {
+        position: relative;
+
+        bottom: unset;
+        left: unset;
+        right: unset;
+
+        margin-top: 40px;
+      }
+
   }
