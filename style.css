@@ -53,7 +53,6 @@ section {
 ============================================================================= */
 h2, h3, h4{
   font-style: normal;
-  /* margin: 24px; */
   font-weight: 700;
   font-size: 18px;
 }
@@ -97,6 +96,28 @@ button {
   #CONTENT
 ============================================================================= */
 
+@media screen and (min-width: 850px) {
+  main {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
+  border-radius: 30px;
+  max-width: 600px;
+  width: 70%;
+  height: auto;
+  }
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.results{
+  width: 50%;
+  border-radius: 30px;
+}
+}
 
 .results {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
@@ -136,7 +157,7 @@ button {
 
 
 .sum {
-  padding: 24px;
+  /* padding: 16px; */
 }
 
 ul {
@@ -204,6 +225,10 @@ ul {
     bottom: 0;
     left: 0;
     right:0;
+  }
+
+  button:hover {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   }
   
  
