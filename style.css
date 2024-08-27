@@ -96,36 +96,7 @@ button {
   #CONTENT
 ============================================================================= */
 
-@media screen and (min-width: 850px) {
-  main {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
 
-  border-radius: 30px;
-  max-width: 600px;
-  width: 70%;
-  height: auto;
-  }
-  body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-
-.results{
-  width: 40%;
-  border-radius: 30px;
-}
-
-.sum {
-
-}
-
-.btn {
-  
-}
-}
 
 .results {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
@@ -166,6 +137,7 @@ button {
 
 .sum {
   /* padding: 16px; */
+  width: 50%;
 }
 
 ul {
@@ -194,26 +166,39 @@ ul {
       gap: 6px;
     }
 
+    .summary__item p {
+      color: grey;
+    }
+
+    
+
   .summary__item--red {
     background-color: hsla(0, 100%, 67%, 0.1);
     color: hsl(0, 100%, 67%);
   }
 
+  
   .summary__item--yellow {
     background-color: hsla(39, 100%, 56%, 0.1);
     color: hsl(39, 100%, 56%);
   }
-
+  
   .summary__item--green {
     background-color: hsla(166, 100%, 37%, 0.1);
     color: hsl(166, 100%, 37%);
   }
-
+  
   .summary__item--blue {
     background-color: hsla(234, 85%, 45%, 0.1);
     color: hsl(234, 85%, 45%);
   }
-
+  
+  .summary__item--red div p, 
+  .summary__item--yellow div p,
+  .summary__item--green div p,
+  .summary__item--blue div p {
+    color:inherit;
+  }
 
   .btn {
     /* margin-top: 20px; */
@@ -227,16 +212,59 @@ ul {
     padding: 15px;
     border-radius: 40px;
     /* margin-bottom: 8px; */
-    margin: 0px 16px 8px 16px;
+    /* margin: 0px 16px 8px 16px; */
 
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right:0;
+    bottom: 8px;
+    left: 16px;
+    right: 16px;
   }
 
   button:hover {
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   }
   
- 
+  @media screen and (min-width: 850px) {
+    main {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  
+    border-radius: 30px;
+    max-width: 600px;
+    width: 70%;
+    height: auto;
+    }
+  
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  
+  .results{
+    width: 50%;
+    border-radius: 30px;
+  }
+  
+  .btn {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    right: unset;
+    margin-top: auto;
+  }
+
+  .results h2 {
+    margin-bottom: 24px;
+  }
+
+  .sum {
+    align-items: normal;
+    text-align: left;
+  }
+
+  section {
+    padding: 24px 20px;
+  }
+  }
